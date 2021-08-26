@@ -1,11 +1,15 @@
 import zipfile
+import argparse
 import shutil
 import time
 import uuid
 import os
 
-file_dir = "/data1/Megazone/00_TF_Org"
-file_list = os.listdir(file_dir)
+parser = argparse.ArgumentParser(description='Extract all images from excel files.')
+parser.add_argument('--dir', help='Directory of the files')
+args = parser.parse_args()
+
+file_list = os.listdir(args.dir)
 excel_list = []
 
 for file_name in file_list:
