@@ -9,7 +9,8 @@ parser = argparse.ArgumentParser(description='Extract all images from excel file
 parser.add_argument('--dir', help='Directory of the files')
 args = parser.parse_args()
 
-file_list = os.listdir(args.dir)
+file_dir = args.dir
+file_list = os.listdir(file_dir)
 excel_list = []
 
 for file_name in file_list:
@@ -44,5 +45,3 @@ for excel_file in excel_list:
                 
     os.rename(zip_name, org_file_name + org_ext)
     shutil.rmtree("./xlsx_zip_extract")
-
-    
