@@ -9,7 +9,7 @@
 ## 폴더 구조
 ```
 application
-├── data_preprocessing/                     - IPU 전용 모델 정의
+├── data_preprocessing/                     - 데이터 전처리 함수 정의
 │     ├── docxreader.py                     - word 파일 이미지 추출
 │     ├── extract_pdf_image.py              - pdf 파일 이미지 추출
 │     ├── extract_ppt_imgae.py              - ppt 파일 이미지 추출
