@@ -23,3 +23,5 @@ application
 ```
 python main.py --model [h5 file] --dir [file path] --label [string]
 ```
+
+![image](https://user-images.githubusercontent.com/12121282/131793241-38b0416b-fb56-4865-bb0f-d396f6e4ff57.png)
