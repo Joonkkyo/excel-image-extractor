@@ -10,11 +10,11 @@
 ```
 application
 ├── data_preprocessing/                     - 데이터 전처리 함수 정의
-│     ├── docxreader.py                     - word 파일 이미지 추출
-│     ├── extract_pdf_image.py              - pdf 파일 이미지 추출
+│     ├── docxreader.py                     - word 파일 파싱 (https://github.com/badbye/docxpy/blob/master/docxpy/docxreader.py 참조)
+│     ├── extract_word_image.py             - word 파일 이미지 추출
 │     ├── extract_ppt_imgae.py              - ppt 파일 이미지 추출
 │     ├── extract_excel_imgae.py            - 엑셀 파일 이미지 추출
-│     └── extract_docx_image.py             - 모델 정의
+│     └── extract_pdf_image.py              - pdf 파일 이미지 추출
 ├── README.md                               - 리드미 파일
 ├── main.py                                 - 메인 프로그램
 └── requirements.txt                        - 필수 모듈 정의
@@ -23,4 +23,6 @@ application
 ```
 python main.py --model [h5 file] --dir [file path] --label [string]
 ```
-
+* [h5 file] : pretrained model의 weight 파일
+* [file path] : 추출할 파일이 존재하는 경로
+* [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
