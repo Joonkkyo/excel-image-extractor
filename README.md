@@ -2,7 +2,7 @@
 문서 타입별 이미지 추출 및 비문 여부 추론 프로그램
 
 ## Overview
-1. PPT, Pdf, Word, Excel 문서에 존재하는 모든 이미지 추출
+1. ppt, ddf, word, excel 에 존재하는 모든 이미지 추출
 2. 추출된 이미지에 대해 pretrained model 기반 inference 실행 (비문 여부)
 3. 문서의 비문 여부를 기록한 csv 파일 생성
 
