@@ -1,5 +1,4 @@
 # excel-image-extractor
----
 
 ## Overview
 1. Seegene의 densenet 기반 inference 모델을 IPU에서 실행 가능하도록 변환
