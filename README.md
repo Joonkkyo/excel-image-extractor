@@ -24,6 +24,6 @@ application
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
 ```
 * [h5 file] : pretrained model의 weight 파일, 추출만 진행할 시 입력하지 않음
-* [input dir path] : 추출할 파일이 존재하는 디렉토리
-* [output dir path] : 추출한 이미지가 저장될 디렉토리
+* [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
+* [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
