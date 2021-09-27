@@ -37,14 +37,14 @@ application
 └── requirements.txt                        - 필수 모듈 정의
 ```
 ## 환경 설정
-
-## Usage
 ```bash
 $ virtualenv venv -p python3
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 libreoffice 7.2 설치 (https://ko.libreoffice.org/download/libreoffice-fresh/)
+## Usage
+
 ### Preprocess & Inference
 ```bash
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
