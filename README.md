@@ -37,6 +37,7 @@ application
 └── requirements.txt                        - 필수 모듈 정의
 ```
 ## Usage
+
 ### Preprocess & Inference
 ```bash
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
@@ -46,6 +47,11 @@ python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [out
 * [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
 
+### Model Training
+```bash
+python train.py --input-dir [intput dir path]
+```
+* [input dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
 ## Result
 csv 파일에 다음과 같은 형식으로 추론 결과 저장
