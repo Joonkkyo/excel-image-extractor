@@ -45,3 +45,11 @@ python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [out
 * [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 * [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
+
+
+## Result
+|Documents|Results|Prob (TF)|Prob (Secret)|
+|---|---|---|---|
+|aa.pptx|TF|73.8%|26.2%|
+|bb.pdf|Secret|53.6%|46.4%|
+|cc.docx|판단 불가 (이미지 없음)| | |
