@@ -44,6 +44,7 @@ $ virtualenv venv -p python3
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
+libreoffice 7.2 설치 (https://ko.libreoffice.org/download/libreoffice-fresh/)
 ### Preprocess & Inference
 ```bash
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
