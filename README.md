@@ -29,7 +29,7 @@ application
 ├── K_Tensorboard_Log/                      - 학습 과정을 기록한 tensorboard log 저장 
 ├── L_Utils/                                - 기타 유틸리티 프로그램
 ├── README.md                               - 리드미 파일
-├── main.py                                 - 메인 프로그램
+├── main.py                                 - 메인 프로그램 (문서 이미지 추출 + inference)
 └── requirements.txt                        - 필수 모듈 정의
 ```
 ## Usage
