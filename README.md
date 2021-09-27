@@ -48,11 +48,18 @@ python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [out
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
 
 ### Model Training
+파일에서 추출한 이미지 데이터를 바탕으로 CNN 모델 기반 학습 진행
 ```bash
-python ./D_Training/train.py --input-dir [intput dir path]
+python ./D_Training/train.py --dir [intput dir path]
 ```
-* [input dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
+* [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
+### Incremental Training
+추가적으로 추출한 이미지 파일을 기존 모델에 추가적으로 학습 진행 
+```bash
+python ./J_Incremental_Training/train.py --dir [dir path] --
+```
+* [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 ## Result
 csv 파일에 다음과 같은 형식으로 추론 결과 저장
 |Documents|Results|Prob (TF)|Prob (Secret)|
