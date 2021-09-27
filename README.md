@@ -41,8 +41,9 @@ application
 $ virtualenv venv -p python3
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-운영체제에 맞는 libreoffice 7.2 설치 (https://ko.libreoffice.org/download/libreoffice-fresh/)
 ```
+운영체제에 맞는 libreoffice 7.2 설치 => https://ko.libreoffice.org/download/libreoffice-fresh/
+
 ## Usage
 
 ### Preprocess & Inference
