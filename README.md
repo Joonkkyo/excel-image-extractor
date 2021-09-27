@@ -58,6 +58,6 @@ csv 파일에 다음과 같은 형식으로 추론 결과 저장
 |Documents|Results|Prob (TF)|Prob (Secret)|
 |---|---|---|---|
 |aa.pptx|TF|73.8%|26.2%|
-|bb.pdf|Secret|53.6%|46.4%|
+|bb.pdf|Secret|46.4%|53.6%|
 |cc.docx|판단 불가 (이미지 없음)| | |
 |dd.xlsx|TF| 99.61% | 0.39% |
