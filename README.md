@@ -9,12 +9,25 @@
 ## 폴더 구조
 ```
 application
-├── data_preprocessing/                     - 데이터 전처리 함수 정의
+├── A_OriginalDataset/                      - 예제 input data
+│     ├── Secrets/                          - 예제 input data (비밀 문서)
+│     └── TFs/                              - 예제 input data (TF 문서)
+├── B_Data_Preprocessing/                   - 데이터 전처리 함수 정의
 │     ├── docxreader.py                     - word 파일 파싱 (https://github.com/badbye/docxpy/blob/master/docxpy/docxreader.py 참조)
 │     ├── extract_word_image.py             - word 파일 이미지 추출
-│     ├── extract_ppt_imgae.py              - ppt 파일 이미지 추출
-│     ├── extract_excel_imgae.py            - 엑셀 파일 이미지 추출
+│     ├── extract_ppt_image.py              - ppt 파일 이미지 추출
+│     ├── extract_excel_image.py            - 엑셀 파일 이미지 추출
 │     └── extract_pdf_image.py              - pdf 파일 이미지 추출
+├── C_PreprocessedDataSet/                  - input data로부터 추출된 이미지 저장
+├── D_Training/                             - 추출된 이미지 기반 학습 코드
+├── E_Model/                                - 학습 후 생성된 모델 저장
+├── F_Inferencing_SampleData                - inference를 진행할 예제 데이터
+├── G_Inferencing/                          - 문서에 대한 inference 실행 코드
+├── H_Result/                               - inference 결과를 저장할 csv 파일 문서
+├── I_IncTrainSampleDataSet                 - incremental training 진행에 사용할 이미지 데이터셋
+├── J_Incremental_Training                  - inceremental training 실행 코드
+├── K_Tensorboard_Log                       - 학습 과정을 기록한 tensorboard log 저장 
+├── L_Utils                                 - 기타 유틸리티 프로그램
 ├── README.md                               - 리드미 파일
 ├── main.py                                 - 메인 프로그램
 └── requirements.txt                        - 필수 모듈 정의
