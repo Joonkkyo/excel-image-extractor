@@ -49,7 +49,7 @@ python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [out
 
 ### Model Training
 ```bash
-python train.py --input-dir [intput dir path]
+python ./D_Training/train.py --input-dir [intput dir path]
 ```
 * [input dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
