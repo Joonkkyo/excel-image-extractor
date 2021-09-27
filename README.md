@@ -37,6 +37,7 @@ application
 └── requirements.txt                        - 필수 모듈 정의
 ```
 ## Usage
+### Preprocess & Inference
 ```bash
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
 ```
