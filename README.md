@@ -49,7 +49,7 @@ $ pip install -r requirements.txt
 
 ## Usage
 
-### main.py - Preprocess & Inference
+### Preprocess & Inference - main.py
 ```bash
 python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
 ```
@@ -58,14 +58,14 @@ python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [out
 * [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
 
-### D_Training/train.py - Model Training
+### Model Training - D_Training/train.py
 파일에서 추출한 이미지 데이터를 바탕으로 CNN 모델 기반 학습 진행
 ```bash
 python ./D_Training/train.py --dir [intput dir path]
 ```
 * [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
-### J_Incremental_Training/train.py - Incremental Training
+### Incremental Training - J_Incremental_Training/train.py
 추가적으로 추출한 이미지 파일을 기존 모델에 추가적으로 학습 진행 
 ```bash
 python ./J_Incremental_Training/train.py --dir [dir path] --img [img path]
