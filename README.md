@@ -37,12 +37,14 @@ application
 └── requirements.txt                        - 필수 모듈 정의
 ```
 ## 환경 설정
+* 가상환경 설정 및 필수 모듈 설치
 ```bash
 $ virtualenv venv -p python3
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
-운영체제에 맞는 libreoffice 7.2 설치 => https://ko.libreoffice.org/download/libreoffice-fresh/
+* 운영체제에 맞는 libreoffice 7.2 설치
+  https://ko.libreoffice.org/download/libreoffice-fresh/
 
 ## Usage
 
