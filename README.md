@@ -72,7 +72,8 @@ python ./J_Incremental_Training/incremental_train.py --dir [dir path] --img [img
 ```
 * [dir path] : 추가 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략), default 경로 :  `../I_IncTrainSampleDataSet`
 * [img path] : inference를 진행할 이미지 파일 경로
-* [model path] : 추가적으로
+* [model path] : 추가적으로 학습시킬 모델의 weight 파일 경로, 생성된 모델은 `E_Model` 폴더에 저장됨
+
 ## Result
 csv 파일에 다음과 같은 형식으로 추론 결과 저장
 |Documents|Results|Prob (TF)|Prob (Secret)|
