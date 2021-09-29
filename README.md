@@ -25,9 +25,11 @@ application
 ├── F_Inferencing_SampleData/               - inference를 진행할 예제 데이터
 ├── G_Inferencing/                          - 문서에 대한 inference 실행 코드
 ├── H_Result/                               - inference 결과를 저장할 csv 파일 문서
-├── I_IncTrainSampleDataSet/                - incremental training 진행에 사용할 이미지 데이터셋
+├── I_IncTrainSampleDataSet/                - incremental training에 사용할 이미지 데이터셋
+│     ├── Secrets/                          - 비밀 문서에서 추출된 이미지 데이터
+│     └── TFs/                              - TF 문서에서 추출된 이미지 데이터
 ├── J_Incremental_Training/                 - inceremental training 실행 코드
-│     └── incremental_train.py              - pdf 파일 이미지 추출
+│     └── incremental_train.py               
 ├── K_Tensorboard_Log/                      - 학습 과정을 기록한 tensorboard log 저장 
 ├── L_Utils/                                - 기타 유틸리티 프로그램
 │     ├── compare_two_dir.py                - 두 디렉토리 비교 후 중복 파일 제거
