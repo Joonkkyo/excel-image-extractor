@@ -51,9 +51,9 @@ $ pip install -r requirements.txt
 
 ### Preprocess & Inference - main.py
 ```bash
-python main.py --model [h5 file] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
+python main.py --model [model path] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
 ```
-* [h5 file] : pretrained model의 weight 파일, 추출만 진행할 시 입력하지 않음
+* [model path] : pretrained model의 weight 파일 경로, 추출만 진행할 시 입력하지 않음
 * [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 * [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
@@ -65,13 +65,14 @@ python ./D_Training/train.py --dir [intput dir path]
 ```
 * [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
-### Incremental Training - J_Incremental_Training/train.py
-추가적으로 추출한 이미지 파일을 기존 모델에 추가적으로 학습 진행 
+### Incremental Training - J_Incremental_Training/incremental_train.py
+추가적으로 추출한 이미지 파일을 pretrained 모델에 추가적으로 학습 진행 
 ```bash
-python ./J_Incremental_Training/train.py --dir [dir path] --img [img path]
+python ./J_Incremental_Training/incremental_train.py --dir [dir path] --img [img path] --model [model path]
 ```
-* [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
+* [dir path] : 추가 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략), default 경로 :  `../I_IncTrainSampleDataSet`
 * [img path] : inference를 진행할 이미지 파일 경로
+* [model path] : 추가적으로
 ## Result
 csv 파일에 다음과 같은 형식으로 추론 결과 저장
 |Documents|Results|Prob (TF)|Prob (Secret)|
