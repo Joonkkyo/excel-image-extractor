@@ -9,16 +9,18 @@
 ## 폴더 구조
 ```
 application
-├── A_OriginalDataset/                      - 예제 input data
-│     ├── Secrets/                          - 예제 input data (비밀 문서)
-│     └── TFs/                              - 예제 input data (TF 문서)
+├── A_OriginalDataset/                      - 분류에 사용할 문서 파일
+│     ├── Secrets/                          - 비밀 문서
+│     └── TFs/                              - TF 문서
 ├── B_Data_Preprocessing/                   - 데이터 전처리 함수 정의
 │     ├── docxreader.py                     - word 파일 파싱 (https://github.com/badbye/docxpy/blob/master/docxpy/docxreader.py 참조)
 │     ├── extract_word_image.py             - word 파일 이미지 추출
 │     ├── extract_ppt_image.py              - ppt 파일 이미지 추출
 │     ├── extract_excel_image.py            - 엑셀 파일 이미지 추출
 │     └── extract_pdf_image.py              - pdf 파일 이미지 추출
-├── C_PreprocessedDataSet/                  - input data로부터 추출된 이미지 저장
+├── C_PreprocessedDataSet/                  - 각 파일로부터 추출된 이미지 저장
+│     ├── Secrets/                          - 비밀 문서에서 추출된 이미지 데이터
+│     └── TFs/                              - TF 문서에서 추출된 이미지 데이터
 ├── D_Training/                             - 추출된 이미지 기반 학습 코드
 │     └── train.py                          
 ├── E_Model/                                - 학습 후 생성된 모델 저장
@@ -48,6 +50,10 @@ $ pip install -r requirements.txt
 * 운영체제에 맞는 libreoffice 7.2 설치
 
   https://ko.libreoffice.org/download/libreoffice-fresh/
+* libreoffice 7.2 설치 확인
+```bash
+$ libreoffice7.2 --version
+```
 
 ## Usage
 
