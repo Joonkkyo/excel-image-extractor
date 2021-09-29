@@ -56,9 +56,9 @@ $ pip install -r requirements.txt
 python main.py --model [model path] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
 ```
 * [model path] : pretrained model의 weight 파일 경로, 추출만 진행할 시 입력하지 않음
-* [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
-* [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략) ex) /home/data/output_img
-* [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열
+* [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략), default 경로 : `./A_OriginalDataSet`
+* [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략), default 경로 : `./C_PreprocessedDataSet`
+* [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열 aaa.pdf => [string]_aaa.jpg
 
 ### Model Training - D_Training/train.py
 파일에서 추출한 이미지 데이터를 바탕으로 CNN 모델 기반 학습 진행
