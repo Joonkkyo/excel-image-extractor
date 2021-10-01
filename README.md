@@ -73,7 +73,7 @@ python main.py --model [model_path] --input-dir [intput_dir_path] --output-dir [
 ### Model Training - D_Training/train.py
 파일에서 추출한 이미지 데이터를 바탕으로 CNN 모델 기반 학습 진행
 ```bash
-python ./D_Training/train.py --dir [intput dir path]
+python ./D_Training/train.py --dir [intput_dir_path]
 ```
 * [dir_path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
