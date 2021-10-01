@@ -59,13 +59,13 @@ $ libreoffice7.2 --version
 
 ### Preprocess & Inference - main.py
 ```bash
-python main.py --model [model path] --input-dir [intput dir path] --output-dir [output dir path] --label [string]
+python main.py --model [model_path] --input-dir [intput_dir_path] --output-dir [output_dir_path] --label [string]
 ```
-* [model path] : pretrained model의 weight 파일 경로, 추출만 진행할 시 입력하지 않음
-* [input dir path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략)
+* [model_path] : pretrained model의 weight 파일 경로, 추출만 진행할 시 입력하지 않음
+* [input_dir_path] : 추출할 파일이 존재하는 디렉토리 (마지막 문자 / 생략)
 
     - default 경로 : `./A_OriginalDataSet`
-* [output dir path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략)
+* [output_dir_path] : 추출한 이미지가 저장될 디렉토리 (마지막 문자 / 생략)
 
     - default 경로 : `./C_PreprocessedDataSet`
 * [string] : 이미지 추출 과정에서  이름 앞에 붙는 문자열 `ex) test.pdf => [string]_test_1.jpg, [string]_test_2.jpg, ...`
@@ -75,18 +75,18 @@ python main.py --model [model path] --input-dir [intput dir path] --output-dir [
 ```bash
 python ./D_Training/train.py --dir [intput dir path]
 ```
-* [dir path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
+* [dir_path] : 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략) ex) /home/data/input_img
 
 ### Incremental Training - J_Incremental_Training/incremental_train.py
 추가적으로 추출한 이미지 파일을 pretrained 모델에 추가적으로 학습 진행 
 ```bash
-python ./J_Incremental_Training/incremental_train.py --dir [dir path] --img [img path] --model [model path]
+python ./J_Incremental_Training/incremental_train.py --dir [dir_path] --img [img_path] --model [model_path]
 ```
-* [dir path] : 추가 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략)
+* [dir_path] : 추가 학습시킬 이미지 파일이 존재하는 디렉토리 (마지막 문자 / 생략)
     
     - default 경로 :  `../I_IncTrainSampleDataSet`
-* [img path] : inference를 진행할 이미지 파일 경로
-* [model path] : 추가적으로 학습시킬 모델의 weight 파일 경로, 생성된 모델은 `E_Model` 폴더에 저장됨
+* [img_path] : inference를 진행할 이미지 파일 경로
+* [model_path] : 추가적으로 학습시킬 모델의 weight 파일 경로, 생성된 모델은 `E_Model` 폴더에 저장됨
 
 ## Result
 csv 파일에 다음과 같은 형식으로 추론 결과 저장
